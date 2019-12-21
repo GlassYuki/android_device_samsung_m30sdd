@@ -46,6 +46,7 @@ TARGET_NO_RADIOIMAGE := true
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos9611
+TARGET_KERNEL_CONFIG := m30sdd_defconfig
 
 # Image
 BOARD_INCLUDE_RECOVERY_DTBO := true
