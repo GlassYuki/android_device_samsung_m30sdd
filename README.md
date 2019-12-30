@@ -2,6 +2,7 @@
 
 ## How-to compile it:
 To clone:
+
 ```git clone https://github.com/thirdsty/android_device_samsung_m30sdd.git m30sdd/ ```
 
 To build:
