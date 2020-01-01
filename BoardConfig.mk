@@ -1,6 +1,5 @@
-
 #
-# Copyright (C) 2019 Avilie
+# Copyright (C) 2019 thirdsty
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -45,10 +44,12 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/exynos9611
-TARGET_KERNEL_CONFIG := m30sdd_defconfig
+#TARGET_KERNEL_SOURCE := kernel/samsung/exynos9611
+#TARGET_KERNEL_CONFIG := m30sdd_defconfig
 
 # Image
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo
 BOARD_KERNEL_BASE := 0x10000000
