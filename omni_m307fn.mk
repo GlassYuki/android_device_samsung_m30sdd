@@ -1,5 +1,5 @@
 #
-# Copyright 2018 The Android Open Source Project
+# Copyright 2019 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := m30sdd
+PRODUCT_RELEASE_NAME := m307fn
 
 
 $(call inherit-product, build/target/product/embedded.mk)
@@ -24,8 +24,8 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := m30sdd
-PRODUCT_NAME := omni_m30sdd
+PRODUCT_DEVICE := m307fn
+PRODUCT_NAME := omni_m307fn
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := Galaxy M30s
 PRODUCT_MANUFACTURER := Samsung

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 thirdsty
+# Copyright (C) 2019 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/m30sdd
+DEVICE_PATH := device/samsung/m307fn
 
 # Architecture
 TARGET_ARCH := arm64
@@ -77,7 +77,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
-TARGET_RECOVERY_PIXEL_FORMAT := " BGRA_8888"
+TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 
 # TWRP
 TW_USE_TOOLBOX := true
