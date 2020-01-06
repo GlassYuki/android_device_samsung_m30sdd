@@ -24,7 +24,6 @@ git clone https://github.com/thirdsty/android_device_samsung_m307fn.git device/s
 ```
 export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch omni_m30sdd-eng; mka recoveryimage
 ```
-Сompilation result is in ```twrp/out/target/product/m30sdd```
 ```
 git clone https://github.com/thirdsty/android_device_samsung_m307fn.git device/samsung/m307fn/
 ```
