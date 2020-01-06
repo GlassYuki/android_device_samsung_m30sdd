@@ -17,7 +17,6 @@ repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_
 repo sync
 ```
 ```
-<<<<<<< HEAD
 git clone https://github.com/thirdsty/android_device_samsung_m307fn.git device/samsung/m307fn/
 ```
 ## How-to build:
@@ -26,8 +25,7 @@ git clone https://github.com/thirdsty/android_device_samsung_m307fn.git device/s
 export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch omni_m30sdd-eng; mka recoveryimage
 ```
 Сompilation result is in ```twrp/out/target/product/m30sdd```
-
-=======
+```
 git clone https://github.com/thirdsty/android_device_samsung_m307fn.git device/samsung/m307fn/
 ```
 ## How-to build:
