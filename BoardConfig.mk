@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/m307fn
+DEVICE_PATH := device/samsung/m30sdd
 
 # Architecture
 TARGET_ARCH := arm64
@@ -34,8 +34,6 @@ TARGET_USES_64_BIT_BINDER := true
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
-ALLOW_MISSING_DEPENDENCIES=true
-
 # Bootloader
 BOARD_VENDOR := samsung
 TARGET_SOC := exynos9611
@@ -49,14 +47,15 @@ TARGET_NO_RADIOIMAGE := true
 
 # Image
 BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/recovery_dtbo
 
-BOARD_KERNEL_IMAGE_NAME := Image
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+BOARD_KERNEL_IMAGE_NAME := zImage
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage
 
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version 1 --board SRPSE30A001RU
+
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version 1 --board SRPSE30A002RU
 
 # Platform
 TARGET_BOARD_PLATFORM := exynos5
@@ -80,13 +79,16 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 
+#Ignore Missing Dependencies
+ALLOW_MISSING_DEPENDENCIES=true
+
 # TWRP
 TW_USE_TOOLBOX := true
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
 TW_MAX_BRIGHTNESS := 255
-TW_DEFAULT_BRIGHTNESS := 100
+TW_DEFAULT_BRIGHTNESS := 153
 TW_Y_OFFSET := 80
 TW_H_OFFSET := -80
 TW_NO_REBOOT_BOOTLOADER := true
@@ -96,3 +98,7 @@ TW_EXTRA_LANGUAGES := true
 TW_USE_NEW_MINADBD := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 PLATFORM_SECURITY_PATCH := 2019-08-01
+
+# Debug-tools
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
