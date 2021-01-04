@@ -17,7 +17,7 @@ repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_
 repo sync
 ```
 ```
-git clone https://github.com/thirdsty/android_device_samsung_m30sdd.git device/samsung/m30sdd/
+git clone https://github.com/fakelog/twrp_device_samsung_m30sdd.git device/samsung/m30sdd/
 ```
 ## How-to build:
 
